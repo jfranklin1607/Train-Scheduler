@@ -1,0 +1,39 @@
+body{
+	background-image: url(../images/train3.jpg);
+}
+.jumbotron{
+	background-color: blue!important;
+	text-align: center;
+	width: 75%;
+	position: relative;
+	margin: auto;
+}
+
+h1{
+	text-shadow: 5px 5px white!important;
+}
+
+p{
+	font-weight: bolder!important;
+	font-size: 30px!important;
+	text-shadow: 1px 1px white;
+}
+
+.card{
+	position: relative;
+	margin: auto;
+}
+
+thead{
+	color: black;
+}
+
+.btn{
+	width: 10%;
+	position: relative;
+	margin: auto;
+}
+
+tbody{
+	color: black;
+}

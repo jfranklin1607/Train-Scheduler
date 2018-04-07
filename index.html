@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Train Scheduler</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-7ELRJF5/u1pkLd0W7K793Y7ZCb1ISE8FjEKiDAwHD3nSDbA2E9Txc423ovuNf1CV" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+
+</head>
+<body>
+  <div class="jumbotron">
+  <h1 class="display-3">Train Scheduler</h1>
+  <p class="lead">Welcome Aboard</p>
+  </div>
+
+<div class="card text-white bg-warning mb-3" style="max-width: 75rem;">
+  <div class="card-header">Current Train Schedule</div>
+  <table class="table table-hover" id="trainTable">  
+  <thead>
+    <tr>
+      <th scope="col">Train Name</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Frequncy (min)</th>
+      <th scope="col">Next Arrival</th>
+      <th scope="col">Minutes Away</th>
+    </tr>
+  </thead>
+  <tbody>
+  	
+  </tbody>
+</table>
+</div>
+
+<div class="card border-warning mb-3" style="max-width: 75rem;">
+  <div class="card-header">Add Train</div>
+  <div class="form-group">
+      <label for="trainNameInput">Train Name</label>
+      <input type="trainName" class="form-control" id="trainName" placeholder="Train Name">
+    </div>
+    <div class="form-group">
+      <label for="destinationInput">Destination</label>
+      <input type="destination" class="form-control" id="destination" placeholder="Destination">
+    </div>
+    <div class="form-group">
+      <label for="trainTimeInput">First Train Time (HH:mm-military time)</label>
+      <input type="trainTime" class="form-control" id="trainTime" placeholder="HH:mm">
+    </div>
+    <div class="form-group">
+      <label for="frequencyInput">Frequency (min)</label>
+      <input type="frequency" class="form-control" id="frequency" placeholder="Frequency">
+    </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary" >Submit</button>
+  </fieldset>
+</div>
+
+
+
+<script type="text/javascript" src="assets/javascript/firebase.js"></script>
+
+</body>
+</html>
